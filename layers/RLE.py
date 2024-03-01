@@ -34,7 +34,6 @@ Learning Grid Cells as Vector Representation of Self-Position Coupled with Matri
 class TheoryGridCellSpatialRelationEncoder(nn.Module):
     """
     Given a list of (deltaX,deltaY), encode them using the position encoding function
-    # 10_3 frequency_num=16, 64
     """
     def __init__(self, spa_embed_dim, coord_dim = 2, frequency_num = 16, 
         max_radius = 360,  min_radius = 0.0001, freq_init = "geometric", ffn = None, uv_theta = 0):

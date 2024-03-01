@@ -5,7 +5,7 @@ import pytorch_lightning as pl
 from torch_mobility.metrics.collective import common_part_of_commuters
 from torch_mobility.models.layers.module import get_activation_function
 
-from torch_mobility.models.layers.distance_postional1 import TheoryGridCellSpatialRelationEncoder,MultiLayerFeedForwardNN
+from torch_mobility.models.layers.RLE import TheoryGridCellSpatialRelationEncoder,MultiLayerFeedForwardNN
 from torch_mobility.models.layers.layers import DropPath, TransformerEncoderLayer
 
 class TransFlower(pl.LightningModule):
